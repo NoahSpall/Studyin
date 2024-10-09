@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydrology & Fluvial Geomorphology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topic-pages-header">
+        <p class="go-back"><a href="geography.html"><--Go back</a></p>
+        <h1 class="topic-pages-title">Geography</h1>
+    </div>
+    
+    <div class="topic-header">
+        <h1 class="hover-text" style="text-decoration: underline;" data-popup-content="Hydrology: 
+        The scientific study of the properties and movement of our planet's water. 
+        
+        Fluvial Geomorphology: 
+        the study of the interactions between the physical shapes of rivers, their water and sediment transport processes, and the landforms they create.">1. Hydrology & Fluvial Geomorphology</h1>
+
+        <img src="assets/media/hydrology-fuvial-geomorphology.png" alt="" style="width: 500px; height: auto;">
+    </div>
+    <div class="popup-card" id="popupCard"></div>
+    
+    
+    <div class="content">
+        <h1 class="subtopics">1.1. the Drainage Basin System</h1>
+        <h2>Definition and Overview:</h2>
+        <ul>
+            <li>The area of land drained by a river and its tributaries. It is often referred to as a <b>river catchment</b> or <strong>river basin</strong></li>
+            <li>The drainage basin is an <b>open system</b>, meaning it receives inputs and outputs of both energy and matter(water)</li>
+        </ul>
+        <h2>Key Components:</h2>
+        <ul>
+            <li>Inputs:</li>
+            <ul>
+                <li><b>Precipitation - </b>Water falling from the atmosphere as rain, snow, hail or sleet</li>
+            </ul>
+            <li>Stores:</li>
+            <ul>
+                <li><b>Interception - </b>precipitation is caught and stored by vegetation before it reaches the ground.</li>
+                <li><b>Soil Moisture (SM)</b> - Water stored in the soil in things called pores (small air pockets)</li>
+                <ul>
+                    <li>SM Deficit: available water is being used up</li>
+                    <li>SM Recharge: precipitation > Potential evaporation. Some dry pores refill</li>
+                    <li>SM Surplus: soil is saturated, water cannot enter, so flows over the surface</li>
+                    <li>SM Utilisation: Evapotranspiration (and other water uses) > precipitation</li>
+                    <li>Field Capacity: amount of water held once excess has drained away - saturation point</li>
+                    <li>Wilting Point: the range of soil Moisture content at which permanent plant wilting occurs</li>
+                    <li>Balance = precipitation - (run off + Evapotranspiration + change in soil moisture)</li>
+                </ul>
+                <li><b>Ground Water</b> - Water stored underground in aquifers</li>
+                <li><b>Surface Water</b> - Water stored (on surface) in lakes, wetlands, ponds, and puddles</li>
+                <li><b>Channel Storage</b> - All water stored in rivers, streams and drainage channels.</li>
+            </ul>
+            <li>Flows (transfers):</li>
+            <ul>
+                <li><b>Above Ground:</b></li>
+                <ul>
+                    <li>Throughfall - leaves and twigs become saturated so water drips from them. Precipitation can also fall through gaps in vegetation cover</li>
+                    <li>Stemflow - precipitation is intercepted by vegetation, then runs down the branches and main trunk</li>
+                    <li>Overland flow - when soil is saturated, or precipitation exceeds infiltration rate, surface runoff occurs (where water flows over the surface)</li>
+                    <li>Hortonian flow - shallow, laminar, fast moving water that causes severe soil erosion when precipitation exceeds the infiltration capacity and depression soil capacity</li>
+                    <li>Channel flow - movement of water in channels such as streams and rivers</li>
+                </ul>
+                <li><b>Below Ground:</b></li>
+                <ul>
+                    <li>Infiltration - precipitation is absorbed in soil</li>
+                    <ul>
+                        <li>Infiltration Capacirty: maximum rate that precipitation can be absorbed by soil in given conditions</li>
+                        <li>Infiltration is inversely proportional to overland runoff. Depends on: rainfall duration, antecedent soil moisture, porosity, slope angle, vegetation.</li>
+                    </ul>
+                    <li>Percolation - slow movement of water downwards through the soil into bedrock under gravity. Fast in Carboniferous Limestone</li>
+                    <ul>
+                        <li>Rate depends on permeability and porosity of bedrock. Chalk and sandstones are porous, spaces allow water to percolate</li>
+                    </ul>
+                    <li>Throughflow - water flows through the soil in natural pipes or percolines. Occurs above bedrock</li>
+                    <li>Groundwater - water that has infiltrated the ground, entered the phreatic zone and discharged into the channel</li>
+                    <ul>
+                        <li>Phreatic zone: part of an aquifer (permeable rocks and sediments that can hold groundwater or allow it to pass through) below the water table where all pores are permanently saturated</li>
+                    </ul>
+                    <li>Baseflow - where groundwater seeps into the river’s bed and contributes to discharge. Very slow transfer from bedrock and very deep throughflow. Takes anywhere between several months to a couple of years</li>
+
+                </ul>  
+            </ul>
+            <li>Outputs:</li>
+            <ul>
+                <li><b style="text-decoration: underline;" class="hover-text" data-popup-content="Evaporation: 
+                    liquid changes into water vapour, from puddles and streams. Rate of evaporation increases in hot, dry and windy conditions and with larger soil surface area.
+                    
+                    Transpiration: 
+                    water is drawn up from the soil by the plant and leaves the plant as water vapour through tiny pores on the underside of the leaves’ known as stomata.
+                ">Evapotranspiration</b> - The combined process of evaporation from water surfaces and transpiration from plants</li>
+                <li><b>Potential Evapotranspiration</b> - the amound of evaporation that would occur if an unlimited water source were available</li>
+                <li><b>River Discharge</b> - Water leaving the drainage basin via river channels (water that flows into the sea)</li>
+                <li>Q = AV (Q = Discharge, A = Cross Sectional Area, V = Velocity). 
+                    Measured in meters-cubed per second (cumecs)</li>
+            </ul>
+        </ul>
+        <h2>Underground Water:</h2>
+        <ul>
+            <li><b>Water Table:</b> upper layer of the phreatic zone. It will rise and fall depending on the amount of rainfall percolating downwards, and the amount of baseflow from lower rocks. The aeration zone is seasonally wetted and seasonally dries</li>
+            <li><b>Ground Water:</b></li>
+            <ul>
+                <li>Recharge occurs with:</li>
+                <ul>
+                    <li>Infiltration (from precipitation)</li>
+                    <li>Seepage (through banks/bed of rivers, lakes, puddles and ditches)</li>
+                    <li>Leakage and inflow (from adjacent rocks, aquifers)</li>
+                    <li>Artificially from irrigation, resevoirs</li>
+                </ul>
+                <li>Loss occurs with:</li>
+                <ul>
+                    <li>Evapotranspiration (mainly low areas)</li>
+                    <li>Natural discharge (seepage and spring flow)</li>
+                    <li>Leakage and outflow (into aquicludes from aquifers)</li>
+                    <li>Artificial abstraction</li>
+                </ul>
+            </ul>
+            <li><b>Aquifers:</b> permeable rocks (sandstone, limestone, chalk) that contain significant quantities of water. Water inside moves slowly and maintains streamflow – by absorbing or releasing water in wet/dry periods</li>
+            <li><b>Springs:</b> water flow reaches the surface, making a spring. Might be substantial enough to become a source. Usually where percolating water reaches an impermeable layer or the saturated zone</li>
+            <li><b>Water budget equation: S=P−Q−E</b></li>
+            <li>S<b>oil Storage, </b>P<b>recipitation, </b>Q<b>Channel Flow, </b>E<b>vapotranspiration</b></li>
+        </ul>
+        <h3 style="font-size: 35px;">Drainage Basin System Diagram:</h3>
+        <img style="max-width: 600px;" src="./assets/media/drainage-basin-system.jpg" alt="">
+<div>&nbsp;</div> 
+<div>&nbsp;</div> 
+<div>&nbsp;</div> 
+<div>&nbsp;</div> 
+<div>&nbsp;</div> 
+    <h1 class="subtopics">1.2. Discharge relationships within drainage basins </h1>
+    <h2><b style="text-decoration: underline;" class="hover-text" data-popup-content="A hydrograph plots river discharge against time, and shows the river’s regime. Used to understand nature of a drainage basin and factors that affect discharge">Hydrograph</b> Components:</h2>
+    <ul>
+        <li>Annual Hydrograph - to study responses of the river to its environment; highlights seasonal characteristics, therefore biggest influencer is climate</li>
+        <li>Storm Hydrograph - shows variations of river discharge over a short time period. Includes both discharge and rainfall on the y-axis</li>
+        <ul>
+            <li><b>Cumecs</b> - cubic metres per second. Unit of discharge</li>
+            <li><b>Approach Segment</b> - discharge prior to storm</li>
+            <li><b>Rising Limb</b> - shows quick rise in discharge</li>
+            <li><b>Bank full Discharge</b> - channel full. Any further increase in discharge = flood</li>
+            <li><b>Peak Discharge</b> - maximum river discharge</li>
+            <li><b>Lag Time</b> - time between max rainfall and max discharge</li>
+            <li><b>Receding Limb</b> - less steep than rising, shows discharge decline after peak discharge</li>
+            <li><b>Stormflow</b> - stream discharge after rainstorm</li>
+            <li><b>Quickflow</b> - surface runoff reaches channel quickly</li>
+        </ul>
+        <img style="max-width: 500px;" src="./assets/media/hydrograph.png" alt="">
+        <li>Storm Process</li>
+        <ul>
+            <li>Rain falls on drainage basin in large amounts</li>
+            <li>Overland flow occurs as precipitation > infiltration rate. Rising limb builds to peak</li>
+            <li>After a few hours, overland flow reduces and stops. Throughflow then contributes to discharge and stops floodwaters going down as quickly as they rose</li>
+            <li>Baseflow takes over – back to pre-flood state</li>
+        </ul>
+    </ul>
+    <h2>Drainage Basin Characteristics:</h2>
+    <ul>
+        <li><b>Size and Shape</b> - small basins respond quicker, so lag time is reduced. River channels in circular basins respond quicker than those in linear ones</li>
+        <li><b>Low Drainage Density</b> - low drainage density causes a long lag time, as water only has a few paths to take</li>
+        <ul>
+            <li>A dendritic (tree like pattern) will have a higher density. Increased discharge response, greater flood risk and reduced lag time.</li>
+        </ul>
+        <li><b>Soil Porosity and Permeability</b> - impermeable surfaces cause greater peak flows, due to more overland flow. Chalks and gravels allow infiltration and percolation, whereas clay soils do not</li>
+        <li><b>Rock Type</b> - impermeable rocks produce a flashier response, lesser lag times and high peak discharge. Limestone hardly produces a storm hydrograph</li>
+        <li><b>Slopes</b> - steeper = more overland = short lag and higher peak flows</li>
+        <li><b>Vegetation Type</b> - dense forest vegetation intercepts more, so reduced flood response. Opposite in winter</li>
+        <li><b>Land Use</b> - creation of impermeable surfaces (urbanisation) or deforestation increase overland flow. Increasing drainage density (drains) carries water to rivers quicker. Peak flow increases, lag time reduces</li>
+    </ul>
+    <div>&nbsp;</div> 
+    <div>&nbsp;</div> 
+    <div>&nbsp;</div> 
+    <div>&nbsp;</div> 
+    <div>&nbsp;</div> 
+    <h1 class="subtopics">1.3. River channel processes and landforms</h1>
+    <h2>Channel Processes:</h2>
+    <ul>
+        <li>Erosion:</li>
+        <ul>
+            <li><b>Abrasion</b> - riverbed and bank eroded by the river’s load. It is the mechanical impact produced by debris rubbing on the river’s sides. Abrasion increases with velocity and effectiveness depends on energy, hardness and concentration of particles</li>
+            <li><b>Corrasion</b> - the erosive action of particles carried by the river</li>
+            <li><b>Solution</b> - the dissolving of rocks (particularly calcium heavy rocks) by removing chemical ions. Maximum rates – fast flowing, undersaturated streams pass over soluble rocks</li>
+            <li><b>Hydraulic Action</b> - direct force of air and water on the rivers banks that causes chunks to break away. Eddies in the water compress water into bank cracks, and the explosion of air bubbles cause the cracks to weaken</li>
+            <li><b> Cavitation</b> - the force of air exploding. With acceleration, pressure drops in fluids, causing air bubbles to form. Cavitation is when these bubbles implode and produce tiny water jets, cutting rock</li>
+            <li><b> Attrition</b> - collision of sediments that wears down both particles. Produces smaller, rounder particles</li>
+            <li>Rate of erosion is affected by: amount and weight of load, velocity, gradient, hardness of geology, pH level and human impacts increasing erosion</li>
+        </ul>
+        <li>Load Transport:</li>
+        <ul>
+            <li><b>Traction</b> - large particles that are rolled along the riverbed by the force of water. Spend all/most of time on the riverbed</li>
+            <li><b>Saltration</b> - gravel and small stones hop along the riverbed, as a fast eddy picks them up, and a slower one causes them to fall back down</li>
+            <li><b>Suspension</b> - silts and clays are held up by the water. Gives rivers a cloudy appearance, especially close to the mouth</li>
+            <li><b>Solution</b> - dissolved calcareous rocks</li>
+            <li>Load varies with discharge and velocity. Load is calculated at bank full. Capacity is the greatest amount of load that can be carried. Competence is the diameter of the largest particle that can be transported</li>
+        </ul>
+        <li>Deposition:</li>
+        <ul>
+            <li>occurs when there is a reduction in energy, often at river mouths, estuaries and deltas</li>
+            <li>Energy reduces when: gradient reduces, friction increases, load increases, water volume decreases, water flows on the inside of a meander</li>
+        </ul>
+        <li>Sedimentation:</li>
+        <ul>
+            <li>occurs when sediment is dropped from still water</li>
+        </ul>
+        <li>Flocculation:</li>
+        <ul>
+            <li>is where charged ions in sea water allow clay particles to group and settle. Flocculation leads to development of mudbanks when water becomes brackish close to the sea</li>
+        </ul>
+        <li><b>Hjülstrom Curve:</b></li>
+        <img src="./assets/media/hjuelstrom curve.png" alt="">
+        <ul>
+            <li>Critical erosion velocity: lowest velocity needed to pick up particle of that size - entrainment</li>
+            <li>Mean settling velocity: velocity needed to drop particles from suspension</li>
+            <li>Clays have high entrainment value due to their cohesive nature, and gravels due to their weight. Sands are easiest to pick up. Clays remain in suspension if velocity is zero. Velocity for transport is always less than the velocity required to pick up (entrain) the particle</li>
+        </ul>
+    </ul>
+<h2>River Flow:</h2>
+<ul>
+    <li>Velocity is affected more by friction than gradient. We can measure friction with:</li>
+    <ul>
+        <li><b>Bed roughness:</b> <img src="assets/media/Bed roughness.png" alt="">, where R is the hydraulic radius, S is channel gradient and V is velocity. Higher the value of N, the rougher the riverbed</li>
+        <li><b>Hydraulic Radius:</b> <img src="assets/media/Hydraulic radius.png" alt=""></li>
+    </ul>
+    <li>Thalweg: the imaginary line of fastest water velocity down a stream</li>
+    <ul>
+        <li><b>laminar</b> - water flows in sheets parallel to riverbed. No eddies or meanders. Common on smooth surfaces</li>
+        <li><b>Turbulent</b> - water closest to bed/banks slowed by friction and is overtaken by thalweg. Turbulence created, and water close to banks eddies towards the banks, water close to the bed eddies towards the bed</li>
+        <li><b>Helicoidal</b> - horizontal turbulence produces a corkscrew motion. The thalweg moves both laterally from bank to bank, but also vertically from surface to bed during one rotation</li>
+        <img src="assets/media/River flow 1.png" alt="">
+        <img src="assets/media/River flow 2.png" alt="">
+    </ul>
+</ul>
+<h2>Channel Types:</h2>
+<ul>
+    <li><b>Straight</b> - channel with sinuosity < 1.5. 1 is perfectly straight. Rare, because thalweg will still move from side to side due to helicoidal flow. Normally artificial</li>
+    <li><b>Braided</b> - channel is divided by islands or bars. Islands are vegetated, whereas bars are not and are unstable. Formed with steep gradient, coarse material, easily erodible bank, highly variable discharge. When discharge is reducing (and hence velocity), sediment is plentiful and bars form (coarse then fine sediment). With reduced discharge, river must split to go around the bar</li>
+    <li><b>Meandering</b> - channel slope, discharge, helicoidal flow and load combine to a situation where lateral erosion causes meandering. NOT a result of obstacles</li>
+</ul>
+<h2>Landforms:</h2>
+<ul>
+    <li>Meanders:</li>
+    <ul>
+        <li>a pronounced bend in the course of a river. Pools and riffles cause the thalweg to deflect. Where the thalweg is fastest, erosion occurs, and deposition where it is slowest. Over time, this creates a bend in the river</li>
+        <ul>
+            <li><b>River Cliffs</b> - steep side on the outside of a meander bend where erosion is strongest and downwards</li>
+            <li><b>Point Bars</b> - deposits of sediment on the inside of a meander bend, where thalweg is slowest and rising</li>
+            <li><b>Oxbow Lakes</b> - erosion with the thalweg causes narrowing of the bend neck, and after a flood event, the neck is breached. Meander cut off with more deposition, creating an oxbow lake</li>
+        </ul>
+        <li><b>Pools</b> - deep sections develop where erosion dominates (high velocity, dominant laminar flow)</li>
+        <li><b>Riffles</b> - shallower sections of the riverbed where sediment has been deposited (low velocity, turbulent flow). Steep positive relief gradient compared to the negative gradient of the pools</li>
+        <ul>
+            <li>Related to helicoidal flow due to regular spacing</li>
+            <li>Different gradients creates variations in subcritical and supercritical flow, causing erosion or deposition</li>
+        </ul>
+        <li><b>Waterfalls</b> - river spills over gradient change where more resistant rock is on top of less resistant rock, and splashback undercuts rocks by processes of abrasion. Also produced by rejuvenation, where there is a knick point. Plunge pool removes support for overhang, so collapses. Causes upstream migration</li>
+        <ul>
+            <li><b>Gorges</b> - a deep, steep sided valley cause by waterfall retreat</li>
+            <img src="assets/media/gorges.png" alt="">
+        </ul>
+        <li><b>Potholes</b> - turbulence swirls pebbles around a depression in the river’s bed. Sides widened and deepened as pebble erodes the cavity. Initiated by eddying</li>
+        <li><b>Rapids</b> - upper course feature, where gradient is steep, and riverbed is rocky and irregular. Turbulent flow</li>
+        <li><b>Bluffs</b> - old floodplains erode leaving terraces. Meanders erode the edge of the terrace, creating a line of steep slopes called bluffs</li>
+        <li><b>FLoodplains</b> - flat land made up of alluvium next to the river, rise during floods, as fine silt is deposited. Backswamps are sometimes created during flood events. Riverbed can raise if discharge is low, and sediment is deposited</li>
+        <li><b>Levees</b> - following a flood event where banks burst, wetted perimeter increases. Increased friction reduces velocity, and coarse material is deposited first around the banks, with finer material moving across the flood plain causing back swamps</li>
+        <li><b>Deltas</b> - sediment is deposited where the river meets a standing body of water, due to a loss of energy. Clay particles flocculate and deposit. Bottomset beds (fine material built out by turbidity currents) form first, then foreset beds (coarse material carried seaward by rolling/saltation), then topset beds (fine material built by distributaries)</li>
+        <ul>
+            <li><b>Arcuate Delta</b> - Fan shaped. Where longshore drift occurs</li>
+            <li><b>Cuspate Delta</b> - pointed, formed by two opposing currents</li>
+            <li><b>Bird's Doot Delta</b> - still sea allows each distributary to build in any direction</li>
+        </ul>
+    </ul>
+</ul>
+<div>&nbsp;</div> 
+<div>&nbsp;</div> 
+<div>&nbsp;</div> 
+<div>&nbsp;</div> 
+<div>&nbsp;</div> 
+<h1 class="subtopics">1.4. Human Impact</h1>
+<h2>Catchment Flow Modifications:</h2>
+<ul>
+    <li><b>Deforestation</b> - reduced evapotranspiration, increased surface run off, reduced time lag and less surface storage. Higher peak discharge caused</li>
+    <li><b>Afforestation</b> - once a fully established forest, afforestation has the opposite effect to deforestation</li>
+    <li><b>Urbanisation</b> - creation of impermeable surfaces reduces infiltration and increases overland flow. Sewage systems and storm drains get water to the main channel much quicker than throughflow. Lag times are reduced, and flood peaks are increased. Building on floodplains reduces the available flood space, so flood waters will rise higher</li>
+    <li><b>Grazing</b> - ploughing increases infiltration, heavy machinery causes soil compaction, so reduced infiltration, therefore higher peak discharge. Less evapotranspiration than forested area</li>
+    <ul>
+        <li>Water logging/salination occur with poor drainage</li>
+    </ul>
+    <li><b>Abstraction</b> - over abstraction causes the drying up of rivers, falling water tables and saltwater intrusion in coastal areas</li>
+    <li><b>Channelisation</b> - increases the hydraulic radius of a channel, so shorter lag times and higher flood peaks</li>
+    <li><b>Reductions in industrial activity</b> - old springs re-emerge - surface water flooding, basements flood, leakage into tunnels, reduced slope stability</li>
+    <li><b>Water Storage</b> - building dams are good for flood/drought control, irrigation, hydroelectric power. However, they can lose water, salinization occurs and ground water changes</li>
+</ul>
+<h2>Causes and Impancts of River FLoods</h2>
+<ul>
+    <li>Physical Causes:</li>
+    <ul>
+        <li>Heavy, persistent rainfall (deep weather depressions)</li>
+        <li>Rapidly melting snow or ice</li>
+        <li>Impermeable soil and bedrock</li>
+        <li>Coastal storm surges</li>
+        <li>Lack of vegetation</li>
+        <li>Disaster (natural, or dam failure)</li>
+    </ul>
+    <li>Human Causes:</li>
+    <ul>
+        <li>Urbanisation (impermeable surfaces, storm drains, channel restrictions from bridges)</li>
+        <li>Floodplain developments increase risk</li>
+        <li>Engineering that obstructs the channel</li>
+        <li>Mechanised farming and poor/inappropriate farming practices</li>
+    </ul>
+    <li>Impacts:</li>
+    <ul>
+        <li>Deaths, damage and disruption</li>
+        <li>Death toll higher in LICs. Cost higher in HICs</li>
+    </ul>
+</ul>
+<h2>Flood Prediction</h2>
+<ul>
+    <li><b>Recurrence Interval:</b> - how often, on average a flow of a certain size is like to occur</li>
+    <ul>
+        <li>A 100-year flood is one that is expected to occur every 100 years, on average</li>
+        <li>Plotting a graph of flood magnitude against recurrence interval can show when a certain size flood is likely to occur, using a best fit line</li>
+        <li>Or, look at flood history</li>
+    </ul>
+    <li><b>Flood Risk Maps</b> - show where the river is likely to flood, depending on if flood risk is severe (1-75 years) or moderate (76-200 years)</li>
+    <li>Areas most at risk are low-lying parts of active floodplains, small basins subject to flash floods, areas below unsafe dams and low-lying inland shorelines</li>
+</ul>
+<h2>Flood Prevention</h2>
+<ul>
+    <li><b>Forecasting and Warning</b> - use of weather satellites, have an emergency plan, radio/internet communication, rain gauges, river discharge gauges. Computer models that compare new data with history</li>
+    <li><b>Loss Sharing</b> - disater aid and insurance</li>
+    <li><b>Hard Engineering</b> - work against natural processes. Construct dams, levees, straighten the channel, reservoirs, build diversion spillways. Normally fixes local problem but causes more up/downstream</li>
+    <li><b>Hazard Resistant Design</b> - adjust buildings to reduce losses. Sandbags, seal doors/windows, move off lower floors</li>
+    <ul>
+        <li>Flood gates installed on individual houses. Eg. Yarm, on the River Tees</li>
+    </ul>
+    <li><b>Land Use Zoning</b> - move/avoid building on flood prone areas. Allow flooding to happen on floodplain</li>
+    <li><b>Soft Engineering</b> - working with natural processes. Flood abatement decreases amount of run-off. Afforestation, contour ploughing, remove sediment. Flood diversion allows areas to be flooded, not built upon</li>
+    <ul>
+        <li><b>Appropriate Floodplain Use</b> - working from the channel outwards, appropriate use would be - protected wetlands, rough grazing land (that animals can be removed from), parks and leisure areas, houses, then critical buildings such as hospitals furthest away</li>
+    </ul>
+</ul>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

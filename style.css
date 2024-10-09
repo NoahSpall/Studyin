@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Amatic SC';
+    src:url('./assets/fonts/AmaticSC/AmaticSC-Bold.woff2') format('woff2'),
+        url('./assets/fonts/AmaticSC/AmaticSC-Bold.woff') format('woff'),
+        url('./assets/fonts/AmaticSC/AmaticSC-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Shifty-notes';
+    src: url('./assets/fonts/Shifty-notes/OneStory.otf') format('truetype');
+}
+
+body {
+    background-color: #010513;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Amatic SC', 'Courier New', Courier, monospace;
+}
+
+/* Homepage */
+ header {
+    height: 500px;
+    position: relative; 
+    width: 100%;
+    overflow: hidden; 
+    display: flex;
+    justify-content: start;
+ }
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+@keyframes fadefromtop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -80%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 70px;
+    text-shadow: 3px 6px 1px #0f313d;
+    animation: fadefromtop 1s ease-in forwards;
+}
+
+.subjects {
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 400px;
+}
+
+.icons {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+}
+
+
+/* Geography Page */
+.page-header {
+    font-weight: 900px;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    background-color: #244855;
+    color: white;
+    text-shadow: 3px 6px 1px #0f313d;
+}
+
+.topic-pages-header {
+    font-weight: 900px;
+    font-size: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    background-color: #244855;
+    color: white;
+    text-shadow: 3px 6px 1px #0f313d;
+}
+
+.topic-pages-title {
+    margin-top: 0px;
+}
+
+.go-back {
+    margin-top: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    align-self: baseline;
+}
+
+.topic-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #7e0f00;
+    color: #FBE9D0;
+    font-size: 30px;
+    padding: 20px;
+    padding-left: 12px;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+.content {
+    background-color: #874F41;
+    color: #90AEAD;
+    padding-left: 25px;
+    padding: 1px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+ .subtopics {
+    font-size: 45px;
+ }
+
+h2 {
+    font-size: 35px;
+}
+
+li {
+    font-family: 'Shifty-notes', Courier, monospace;
+    font-size: 25px;
+}
+
+
+
+.hover-text {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  .popup-card {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 400px; /* Set a max width if needed */
+  }
+  
+
+.topic-grid {
+    background-color: #874F41;
+    color: #90AEAD;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.topic-item {
+    position: relative;
+    display: inline-block; /* Keeps container size based on content */
+    width: 300px; /* Set your preferred width */
+    height: 300px; /* Set your preferred height */
+    margin: 10px;
+}
+
+.topic-item-image {
+    width: 100%;
+    height: 100%;
+    display: block; /* Removes extra space below image */
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth zoom effect */
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white;
+    font-size: 38px; /* Adjust text size as needed */
+    font-weight: bold;
+    text-align: center;
+    z-index: 1; /* Ensures the text is above the overlay */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 60% opacity */
+    border-radius: 20px;
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth zoom effect */
+}
+
+/* Zoom effect on hover */
+.topic-item:hover img {
+    transform: scale(1.1); /* Scales the image by 10% */
+}
+.topic-item:hover .overlay {
+    transform: scale(1.1); /* Scales the image by 10% */
+}
